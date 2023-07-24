@@ -40,7 +40,7 @@ function eventSec(data) {
         <p>${stories.available} Stories</p>
         <p>For Each Event is ${creators.available} Creators</p>
         <p>Also features over ${characters.available} different characters</p>
-        <a href="/character.html?page=${1}&pageSize=${20}&character=${idx}">Read Info</a>
+        <a href="/event.html?page=${page}&pageSize=${pageSize}&event=${idx}">Read Info</a>
         </div>
         `)
     });

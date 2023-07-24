@@ -58,3 +58,17 @@ font-size: 3rem;
 width: 20rem;
 height: 15rem;
 }
+
+#event{
+    background-color: #fff;
+}
+
+#eventName{
+    width: 96rem;
+}
+
+#eventTitle{
+    font-family: 'Iron Man Of War 001A Ncv';
+    text-shadow: 2px 2px 4px gray;
+    font-size: 5rem;
+}
