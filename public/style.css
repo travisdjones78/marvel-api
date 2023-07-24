@@ -49,3 +49,12 @@ font-size: 3rem;
 .noClr{
     background-color: none
 }
+
+.choiceTxt{
+    font-family: 'Avengeance Heroic Avenger'; 
+    text-shadow: 2px 2px 4px whitesmoke;
+}
+.choiceImg{
+width: 20rem;
+height: 15rem;
+}

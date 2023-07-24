@@ -1,10 +1,9 @@
 const request = require("request");
-const siteUrl = `https://gateway.marvel.com/v1/public/characters?ts=1689913939929&apikey=46f809385e6e2ed0d6fc6f18f988db06&hash=c472f3cda6b76b90be425220321db3aa`
+const siteUrl = `https://gateway.marvel.com/v1/public/events?ts=1689913939929&apikey=46f809385e6e2ed0d6fc6f18f988db06&hash=c472f3cda6b76b90be425220321db3aa`
 const pagination = require('./mods/paginate')
 
-const get_all_Characters = async (req, res) => {
+const get_all_Events = async (req, res) => {
     const { query: { page, pageSize } } = req;
-
     let getAllData = function (callback) {
         if (parseInt(page) === 1) {
             request(siteUrl, (err, response, body) => {
@@ -24,11 +23,10 @@ const get_all_Characters = async (req, res) => {
     };
 
     let sortData = function (payLoad) {
-        const newPayLoad = pagination(payLoad)
         res.status(200).json({ success: true, data: pagination(payLoad) })
     };
 
     getAllData(sortData);
 }
 
-module.exports = { get_all_Characters }
+module.exports = { get_all_Events }

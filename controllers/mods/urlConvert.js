@@ -21,13 +21,10 @@ function convertUrl(page, pageSize) {
     };
 
     var grabRest = function (payLoad) {
-        // const newPayLoad = 
-        // //   console.log('data',)  
         return pagination(payLoad)
     };
 
     return grabFirstPage(grabRest)
-    // return getUserName(saveUserInDatabase); // User: Foo is saved successfully.
 }
 
 module.exports = convertUrl
