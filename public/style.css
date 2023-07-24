@@ -1,0 +1,51 @@
+body{
+    background-image: url(./blob.jpeg);
+    background-size: 10rem;
+}
+
+#char{
+    border: solid black .5px;
+    border-radius: 1.5rem;
+    background-color: #fff;
+}
+
+#charImg{
+    width: 12rem;
+    height: 10rem;
+    border-radius: .5rem;
+}
+
+#charName{
+    width: 96rem;
+}
+
+#charProfImg {
+border-radius: 1.5rem;
+}
+
+#title{
+font-family: 'Avengeance Heroic Avenger';
+text-shadow:  2px 4px 6px black;
+color: rgb(230, 50, 35);
+font-size: 3rem;
+}
+
+#charLabel{
+    font-family: 'Starlord';
+    font-size: 1.5rem;
+}
+#charProf{
+    font-family: 'Starlord';
+    font-size: 5rem;
+}
+
+#user{
+    background-color: #fff;
+    border-radius: .5rem;
+}
+.btnClr{
+    background-color: rgb(230, 50, 35) !important;
+}
+.noClr{
+    background-color: none
+}
