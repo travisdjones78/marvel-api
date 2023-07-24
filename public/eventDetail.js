@@ -21,7 +21,18 @@ function getCharacterInfo(data) {
      `)
     $('#eventInfoImg').attr('src', `${eventInfo.thumbnail.path}.${eventInfo.thumbnail.extension}`)
 }
-// ${creators.available}
+
 $('#curr').on('click', () => {
     window.location.href = '/'
+})
+
+$('#prev').on('click', e => {
+    page--
+    window.location.href = (`/characters.html`)
+})
+
+
+$('#next').on('click', e => {
+page++
+window.location.href = (`/events.html`)
 })

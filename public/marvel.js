@@ -47,3 +47,4 @@ function characterSec(data) {
     });
 }
 
+$('#currPg').append('- Characters')
